@@ -2,3 +2,6 @@ Running: xsim.dir/halfAdder_behav/xsimk -simmode gui -wdb halfAdder_behav.wdb -s
 Design successfully loaded
 Design Loading Memory Usage: 34952 KB (Peak: 34952 KB)
 Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 116688 KB (Peak: 174220 KB)
+Simulation CPU Usage: 10 ms

@@ -31,21 +31,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity halfAdder is
+entity fullAdder is
   Port (
   A, B, cin  :   in  std_logic;
   sum        :   out std_logic;
   cout       :   out std_logic
   );
-end halfAdder;
+end fullAdder;
 
-architecture Behavioral of halfAdder is
-signal temp1 : std_logic;
+architecture Behavioral of fullAdder is
 begin
 
-temp1 <= (A xor B) xor cin;
-sum   <= temp1;
-cout  <= (A and B) or (temp1 and cin);
+sum   <= A XOR B XOR cin;
+cout  <= (A AND B) OR (A AND cin) OR (B AND cin);
 
 
 end Behavioral;
